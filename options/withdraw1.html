@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quintet-Withdraw</title>
+    <link rel="stylesheet" href="withdrawstyle.css">
+    google font links -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Vollkorn&family=Zen+Old+Mincho&display=swap" rel="stylesheet">     
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rokkitt&family=Vollkorn&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="container">
+        <form class="form" action="withdrawvalidate.php" method="post">
+            <h2>Withdraw Amount</h2>
+            <input type="text" name="accnum" class="box" placeholder="Enter Account number" required>
+            <input type="password" name="pin" class="box" placeholder="Enter PIN" required>
+            <input type="text"  name="amount" class="box" placeholder="Enter amount to withdraw" required>
+            <input type="submit" id="submit" value="WITHDRAW" id="submit">
+        </form>
+        <div class="side">
+            <img src="image.png" alt="representation  of online banking atm">
+        </div>
+    </div>
+    
+</body>
+</html>

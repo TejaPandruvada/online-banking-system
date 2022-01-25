@@ -1,0 +1,392 @@
+            
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 15px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+	box-sizing: border-box;
+}
+
+footer{
+  font-size: 0.8em;
+  color: white;
+  padding-left: 5%;
+}
+.copyright{
+  text-align: center;
+}
+
+
+p.main{
+  text-align: center;
+  font-size: 50px;
+}
+.man{
+  color: white;
+}
+
+.container{
+  position: relative;
+  background-color: rgba(255,255,255,0.13);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  height: 200px;
+}
+
+p.inside{
+  font-size: 25px;
+  position:absolute;
+  top:0;
+  right: 0;
+  border: 4px solid black;
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  border-top: 0;
+  border-right: 0;
+  overflow: hidden;
+  color:#8FD6E1;
+  font-size: 1.5em;
+  font-weight: bolder;
+  background-color: rgba(255,255,255,0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+.background .shape{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape:first-child{
+  background: linear-gradient(
+      #1845ad,
+      #23a2f6
+  );
+  left: 240px;
+  top: -10%;
+}
+.shape:last-child{
+  background: linear-gradient(
+      to right,
+      #ff512f,
+      #f09819
+  );
+  right: 5%;
+  top: 40%;
+}
+
+@media (min-width:992px){
+   .col-lg-4{
+      float:left;
+      border: 4px solid black;
+      padding: 40px ;
+      width: 20%;
+      margin:2.5%;
+      font-size: 20px;
+      overflow:hidden;
+  } 
+}
+
+/* Add a sky blue background color to the body background */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #080710;
+	/* background: aqua;you can change the background color of body using background css tag */
+}
+ul{
+	position:absolute;/* set the position of the navigation bar*/
+	top: 8%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 10px 0; /* Adding some padding */
+	background: #fff; /* Add a white background color to the top navigation */
+	display: flex; /* flex Set navigation bar horizontally using the  display tag*/
+	border-radius: 10px; /* add the border radius */
+	box-shadow: 0 10px 30px rgba(0,0,0,.3)
+}
+ /* Style the links inside the navigation bar */
+ul li{
+	list-style: none;
+	text-align: center;
+	display: block;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+ul li:last-child{
+	border-right: none;
+}
+ul li a{
+	text-decoration: none;
+	padding: 0 50px;
+	display: block;
+}
+/* Style the icon inside the navigation bar */
+ul li a .icon{
+	width: 30px; /* changing the width of the icon */
+	height: 30px; /* changing the height of the icon */
+	text-align: center;
+	
+	overflow: hidden;
+	margin: 0 auto 10px;
+	
+}
+/* set the size, height, width of the icon*/
+ul li a .icon .fa{
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	font-size: 20px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	color: #000;
+}
+
+/* Change the color of icon on hover */
+ul li a .icon .fa:last-child{
+	color: rgb(0, 204, 255);
+}
+/* style the color and transform of the icon on hover */
+ul li a:hover .icon .fa{
+	transform: translateY(-100%); /* translate y to add the hover effect */
+}
+ul li a .name{
+	position: relative;
+	height: 20px; 
+	width: 100%;
+	display: block;
+	overflow: hidden;/*make ul li a .name overflow is hidden*/
+}
+/*style the font size and set transition of the navigation menu*/
+ul li a .name span{
+	display: block;
+	position: relative;
+	color: #000;
+	font-size: 16px; /* changing font size */
+	line-height: 20px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	
+}
+/*set and change position, top, width, left, height color of the 'class'.name span:before*/
+ul li a .name span:before{
+	content: attr(data-text);
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	left: 0;
+	height: 1005;
+	color: rgb(20, 32, 32);
+	
+}
+/*style hover effect of ul li a .name span */
+ul li a:hover .name span{
+	transform: translateY(20px);
+}
+.content
+{
+    font-size: 1.5em;
+    width:80%;
+    color: white;
+    background-color: rgba(255,255,255,0.13);
+    padding:5%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6)
+}
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+	text-decoration:none;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .text{
+	  text-decoration: none;
+  }
+  a:link{
+	  text-decoration: none;
+	  color:#000;
+  }
+
+
+  /* menu   --------------- */
+  /* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .container:hover{
+    color: rgb(221, 150, 19); 
+    transform: scale(1.2,1.2);
+    transform-origin:center;
+
+  }
+  .container:active{
+    color: #1845ad;
+  }
+  .container:visited{
+    color:aliceblue;
+  }
+  .container{
+    color: white;
+  }

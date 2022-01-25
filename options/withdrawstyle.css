@@ -1,0 +1,120 @@
+/* deposit form styles */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #080710;
+    background-size: 100vh;
+    /* background-image: 
+    radial-gradient(at 47% 33%, hsl(220.00, 79%, 49%) 0, transparent 59%), 
+    radial-gradient(at 82% 65%, hsl(0.00, 81%, 48%) 0, transparent 55%); */
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: 13%;
+    top : 7%;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: 13%;
+    bottom: 7%;
+}
+
+.container{
+    border-radius: 10px;
+    display: flex;
+    height: 525px;
+    width: 1200px;;
+    margin: 10% auto;
+    /* border: 1px solid black; */
+    border:0px solid
+    rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.13);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+.form{
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Vollkorn', serif;
+    font-family: 'Zen Old Mincho', serif;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: aliceblue;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(102, 102, 145, 0.75);
+
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.form h2{
+    font-size: 3rem;
+    margin: 40px;
+    color: white;
+}
+.box{
+    font-size: 2rem;
+    padding: 12px;
+    width: 65%;
+    margin: 15px;
+    border: 2px solid;
+    border-radius: 17.5px;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Vollkorn', serif;
+    font-family: 'Zen Old Mincho', serif;
+}
+::placeholder{
+    margin-bottom: 1rem;
+}
+#submit{
+    padding: 12px 30px;
+    width: 40%;
+    margin-top: 40px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+}
+#submit:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(102, 102, 145, 0.75);
+    
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    /* border: 1px solid rgba(209, 213, 219, 0.3); */
+}
+.side img{
+    position: relative;
+    top:0;
+    left :0;
+    width: 450px;
+    height: 450px;
+    
+}
